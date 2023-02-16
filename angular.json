@@ -25,9 +25,12 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -91,8 +94,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "houer-store-app:build:production",
+            "firebaseProject": "houer-store-app",
+            "firebaseHostingSite": "houer-store-app"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "736067d4-a881-4d42-a8a6-cf603c574813"
   }
 }

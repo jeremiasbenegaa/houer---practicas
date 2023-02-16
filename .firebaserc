@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "houer-store-app": {
+      "hosting": {
+        "houer-store-app": [
+          "houer-store-app"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "houer-store-app"
+  }
+}

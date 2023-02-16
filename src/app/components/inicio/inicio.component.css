@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+#img1{
+    border-radius: 0%;
+    width: 500px;
+    height: 100px;    
+}
+
+#img1{
+    float: right;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+

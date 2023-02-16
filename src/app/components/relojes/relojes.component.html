@@ -1,0 +1,183 @@
+<!--Agregar Producto Nuevo-->
+
+<div class="row">
+  <div class="col-md-12 d-flex justify-content-end">
+    <button class="btn btn-primarybutton" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">New Product</button>
+  </div>
+</div>
+
+<!--CASIO-->
+
+
+<div class="title text-center py-3">
+  <img id="CASIOLOGO" src="../../../assets/img/CASIOLOGO.png" class="card-img-top" alt="CASIOLOGO">
+</div>
+
+<div class="row mx-5">
+
+
+  <!--TARJETA 1-->
+
+
+  <div class="col">
+      <div class="card-body">
+        <img id="card1" src="../../../assets/img/Casio DW-5000SS-1.avif" class="card-img-top" alt="Casio DW-5000SS-1">
+        <h5 class="card-title">Casio G-SHOCK</h5>
+        <p class="card-text">DW-5000SS-1</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+  </div>
+
+
+  <!--TARJETA 2-->
+
+
+  <div class="col">
+    <img id="card2" src="../../../assets/img/Casio DW-B5600G-7.avif" class="card-img-top" alt="Casio DW-B5600G-7">
+      <div class="card-body">
+        <h5 class="card-title">Casio G-SHOCK</h5>
+        <p class="card-text">DW-B5600G-7</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+</div>
+
+
+  <!--TARJETA 3-->
+  <div class="col">
+    <img id="card3" src="../../../assets/img/SMB Casio DW-5600SMB-4.avif" class="card-img-top" alt="SMB Casio DW-5600SMB-4">
+      <div class="card-body">
+        <h5 class="card-title">Casio G-SHOCK</h5>
+        <p class="card-text">Casio DW-5600SMB-4</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+</div>
+
+
+<!--ROLEX-->
+
+
+<div class="title text-center py-3">
+  <img id="imgrolex" src="../../../assets/img/Rolex-logo.png" class="card-img-top" alt="Rolex-logo">
+</div>
+
+
+<div class="row mx-5">
+
+
+  <!--TARJETA 1-->
+
+
+  <div class="col">
+      <div class="card-body">
+        <img id="card1" src="../../../assets/img/DATEJUST 31.avif" class="card-img-top" alt="DATEJUST 31">
+        <h5 class="card-title">Rolex DATEJUST 31</h5>
+        <p class="card-text">Rolex M278289rbr-0007</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+  </div>
+
+
+  <!--TARJETA 2-->
+
+
+  <div class="col">
+    <img id="card2" src="../../../assets/img/DATEJUST 41.webp" class="card-img-top" alt="DATEJUST 41">
+      <div class="card-body">
+        <h5 class="card-title">Rolex DATEJUST 41</h5>
+        <p class="card-text">Rolex M126333-0010</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+</div>
+
+
+  <!--TARJETA 3-->
+  <div class="col">
+    <img id="card3" src="../../../assets/img/DATEJUST 36.webp" class="card-img-top" alt="DATEJUST 36">
+      <div class="card-body">
+        <h5 class="card-title">Rolex DATEJUST 36</h5>
+        <p class="card-text">Rolex M126234-0015</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+</div>
+
+<!--Modal para agregar productos-->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="formularioProducto">
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label" >Nombre</label>
+            <input type="text" class="form-control" id="recipient-name" formControlName="Nombre">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label" >Precio</label>
+            <input type="number" class="form-control" id="recipient-name" formControlName="Precio">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label" >Descripcion</label>
+            <textarea class="form-control" id="message-text" formControlName="Descipcion"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label" >Url</label>
+            <input type="text" class="form-control" id="recipient-name" formControlName="Url">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" (click)="guardarProducto()">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Footer con las redes sociales-->
+<script src="https://kit.fontawesome.com/0dfc9fea7f.js" crossorigin="anonymous"></script>
+
+<footer class="pie py-5">
+  <div class="header">
+    <img id="logopresentacion" src="../../../assets/img/logo presentacion.png" alt="logo presentacion">
+  </div>
+  <div class="redes sociales">
+    <i class="bi bi-meta"></i>
+    <i class="bi bi-twitter"></i>
+    <i class="bi bi-instagram"></i>
+  </div>
+  <hr>
+  <div class="section">
+    <div>
+        <h2>Company</h2>
+        <a href="#">Inicio</a>
+    </div>
+    <div>
+      <h2>Servicios</h2>
+      <a href="#">Relojes</a>
+  </div>
+  <div>
+    <h2>Contactanos</h2>
+    <a href="#">Contacto</a>
+</div>
+  </div>
+  <hr>
+  <div class="derechos">
+    <p>Copyright©HouerCompany. All right reserved</p>
+    <p>Privacy Policy  Term and conditions</p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+  
+ 
